@@ -17,17 +17,7 @@ public class Job implements Parcelable {
     public static final int WEEKLY = 7;
     public static final int TWO_WEEKS = 14;
     public static final int MONTHLY = 28;
-    public static final Creator<Job> CREATOR = new Creator<Job>() {
-        @Override
-        public Job createFromParcel(Parcel in) {
-            return new Job(in);
-        }
 
-        @Override
-        public Job[] newArray(int size) {
-            return new Job[size];
-        }
-    };
     private String __status;
     private String customer_name;
     private String distance;
@@ -185,4 +175,18 @@ public class Job implements Parcelable {
         dest.writeString(job_street);
         dest.writeString(status);
     }
+
+    public static final Creator<Job> CREATOR = new Creator<Job>() {
+        @Override
+        public Job createFromParcel(Parcel in) {
+            return new Job(in);
+        }
+
+        @Override
+        public Job[] newArray(int size) {
+            return new Job[size];
+        }
+    };
+
+
 }
