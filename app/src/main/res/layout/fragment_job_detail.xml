@@ -1,0 +1,191 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        tools:context="com.rentapanda.fragments.JobDetailFragment">
+
+        <TextView
+            android:id="@+id/tvCustomerNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_name"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu" />
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCustomerNameLabel"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/tvStatusLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCustomerName"
+            android:text="@string/status"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvStatusLabel"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/tvDistanceLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvStatus"
+            android:text="@string/distance"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDistanceLabel"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tvDateLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDistance"
+            android:text="@string/date"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDateLabel"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tvOrderLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDate"
+            android:text="@string/order_time"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu" />
+
+        <TextView
+            android:id="@+id/tvOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrderLabel"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/tvCityLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvOrder"
+            android:text="@string/city"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu" />
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCityLabel"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/tvStreetLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCity"
+            android:text="@string/street"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu" />
+
+        <TextView
+            android:id="@+id/tvStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvStreetLabel"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/tvPriceLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvStreet"
+            android:text="@string/price"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPriceLabel"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/tvMethodLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPrice"
+            android:text="@string/payment_method"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu" />
+
+        <TextView
+            android:id="@+id/tvMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMethodLabel"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/tvRecurrenceLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMethod"
+            android:text="@string/recurrence"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu" />
+
+        <TextView
+            android:id="@+id/tvRecurrence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRecurrenceLabel"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:paddingBottom="15dp"
+            android:textAppearance="?attr/textAppearanceLargePopupMenu"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+</ScrollView>
